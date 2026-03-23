@@ -1,0 +1,393 @@
+.cover {}
+
+/* Grid */
+.div1 {
+    grid-row: span 5 / span 5;
+    width: 85px;
+}
+
+.div2 {
+    /* Tamaño */
+    width: 425px;
+    height: auto;
+
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+
+    /* Grid Interior */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px;
+}
+
+.div3 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 5;
+    width: 30%;
+}
+
+.div4 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    height: 15%;
+}
+
+/* Grid Interior */
+.div5 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 3;
+    grid-row-start: 1;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+.escenario {
+    background-image: url('https://marketing.infecar.es/media/images/escenario.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+
+.div6 {
+    grid-row: span 6 / span 6;
+    grid-column-start: 8;
+    grid-row-start: 2;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+
+.child-div6 {
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 6;
+    grid-row-start: 8;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+.child-div7 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.div8 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr, 2fr;
+    gap: 5px;
+}
+
+.div9 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr, 2fr;
+    gap: 5px;
+}
+
+.div11 {
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr, 2fr;
+    gap: 5px;
+}
+
+.child-div8,
+.child-div9,
+.child-div5,
+.child-div11 {
+    /* Grid */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+.div13 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr, 2fr;
+    gap: 5px;
+}
+
+.child-div13 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+.div15 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.div17 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 8;
+
+    /* Grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+.child-div17 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.div18 {
+    grid-row: span 8 / span 8;
+    grid-column-start: 8;
+    grid-row-start: 1;
+}
+
+/* Seats*/
+
+.seats-user {
+    background-color: #5b9bd5;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.seats-user:hover {
+    background-color: #83b3e4;
+}
+
+.seats-red {
+    background-color: #FF5A5F;
+    color: white;
+    cursor: not-allowed;
+    transition: none;
+}
+
+.seats {
+
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    text-decoration: none !important;
+}
+
+.seats-show {
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    text-decoration: none !important;
+}
+
+.seats-blue {
+    background-color: #7FD7E3;
+    transition: 0.4s;
+    width: 35px;
+    height: 25px;
+}
+
+.seats-green {
+    background-color: #F5A6A3;
+    transition: 0.4s;
+    width: 45px;
+    height: 25px;
+}
+
+.seats-green-vertical {
+    background-color: #7FD7E3;
+    transition: 0.4s;
+    width: 35px;
+    height: 45px;
+}
+
+.seats {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    text-align: center;
+    /* Asegura que el texto está centrado */
+}
+
+/* Menu */
+
+.div-prin {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 425px;
+    margin-bottom: 15px;
+    gap: 7px;
+}
+
+/* Centrar solo el bloque del botón (tercer hijo) */
+.div-prin>div:nth-child(3) {
+    justify-self: center;
+}
+
+.btn-restablecer {
+    padding: 8px;
+    color: white;
+    background-color: green;
+    border: 0px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-restablecer:hover {
+    background-color: rgb(15, 150, 15);
+    transition: 0.5;
+}
+
+.show-btn-seats {
+    height: 25px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    text-align: center;
+    /* Asegura que el texto está centrado */
+    margin: 1px;
+}
+
+.div-expetrior {
+    margin-top: 5px;
+    max-width: 420px;
+    height: 25px;
+    background-color: #e2dddd;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* New Grid Exterior */
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding-top: 10px;
+
+    width: 425px;
+    height: 197px;
+
+    margin: 5px solid black;
+}
+
+.div21 {
+    grid-row: span 2 / span 2;
+}
+
+.div22 {
+    grid-column: span 2 / span 2;
+}
+
+.div23 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 5;
+}
+
+.div24 {
+    background-image: url('./b.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    grid-column: span 3 / span 3;
+    grid-row: span 8 / span 8;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+/* .escenario {
+    background-image: url('https://marketing.infecar.es/media/images/escenario.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+} */
+
+
+.div25 {
+    background-image: url('./cafeeria.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+    grid-column: span 2 / span 2;
+    grid-row: span 8 / span 8;
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+
+div#mauticform_input_formularioexpositoresdigion2026_feria_gran_canaria_me_gus1 {
+    text-align: justify;
+}

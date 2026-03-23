@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Asientos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Selección de Asientos</h1>
+
+    <p id="emailDisplay">Cargando email...</p>
+
+    <div class="seating-area">
+        <!-- Aquí se generarán dinámicamente los asientos -->
+        <div id="1" class="seats">A1</div>
+        <div id="2" class="seats">A2</div>
+        <div id="3" class="seats">A3</div>
+        <div id="4" class="seats">A4</div>
+        <!-- Agrega más asientos según sea necesario -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
