@@ -26,6 +26,28 @@
     }
 }
 
+@media (min-width: 768px) {
+    .parent {
+        width: 570px;
+    }
+    .oval-wrapper {
+        padding: 60px 85px 60px 55px;
+    }
+    .seats-green {
+        width: 42px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .seats-yellow {
+        width: 52px;
+        height: 58px;
+        font-size: 14px;
+    }
+    .div10, .div11, .div12, .div14, .div16 {
+        font-size: 14px;
+    }
+}
+
 
 
 .div2 {
