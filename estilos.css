@@ -249,7 +249,7 @@
 }
 
  .div14 {
-    /* grid-column: span 2 / span 2;
+    grid-column: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 7;
 
@@ -257,19 +257,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8px;
-    text-align: center;
-    word-break: normal;
-    overflow-wrap: break-word;
-    font-weight: bold;
-    padding: 2px;
-    border-radius: 4px; */
-    grid-column: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 7;
-    background-color: #63C3D1;
-    display: inline-table;
-    align-items: center;
     font-size: 11px;
     text-align: center;
     word-break: normal;
@@ -277,9 +264,6 @@
     font-weight: bold;
     padding: 2px;
     border-radius: 4px;
-    left: 25px;
-    position: fixed;
-    top: 449px;
 }
 
 .div16 {
