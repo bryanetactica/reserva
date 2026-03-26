@@ -1,9 +1,4 @@
-.cover {}
-
-
 /* New GRiD */
-
-
 .oval-wrapper {
     background-color: #f0f0f0;
     border-radius: 50%;
@@ -33,22 +28,20 @@
     .oval-wrapper {
         padding: 60px 85px 60px 55px;
     }
-    .seats-green {
+    /* .seats-green {
         width: 42px;
-        height: 30px;
+        height: 35px;
         font-size: 14px;
     }
     .seats-yellow {
         width: 52px;
-        height: 58px;
+        height: 63px;
         font-size: 14px;
     }
     .div10, .div11, .div12, .div14, .div16 {
         font-size: 14px;
-    }
+    } */
 }
-
-
 
 .div2 {
     grid-column: span 4 / span 4;
@@ -210,7 +203,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
     word-break: normal;
     overflow-wrap: break-word;
@@ -224,13 +217,13 @@
     grid-row-start: 1;
 
     background-color: #0091C2;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 11px;
     text-align: center;
-    word-break: break-all;
+    word-break: normal;
+    overflow-wrap: normal;
     font-weight: bold;
     padding: 2px;
     border-radius: 4px;
@@ -261,14 +254,13 @@
     grid-row-start: 7;
 
     background-color: #63C3D1;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9px;
+    font-size: 11px;
     text-align: center;
     word-break: normal;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
     font-weight: bold;
     padding: 2px;
     border-radius: 4px;
@@ -285,7 +277,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
     word-break: normal;
     overflow-wrap: break-word;
@@ -293,204 +285,6 @@
     padding: 2px;
     border-radius: 4px;
 } 
-
-
-/* Grid */
-/* .div1 {
-    grid-row: span 5 / span 5;
-    width: 85px;
-} */
-
-/* .div2 { */
-/* Tamaño */
-/* width: 425px;
-    height: auto;
-
-    grid-column: span 3 / span 3;
-    grid-row: span 4 / span 4; */
-
-/* Grid Interior */
-/* display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 15px;
-} */
-
-/* .div3 {
-    grid-row: span 5 / span 5;
-    grid-column-start: 5;
-    width: 30%;
-}
-
-.div4 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 5;
-    height: 15%;
-}
-
-/* Grid Interior */
-/* .div5 {
-    grid-column: span 5 / span 5;
-    grid-column-start: 3;
-    grid-row-start: 1; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-} */
-
-/* .escenario {
-    background-image: url('https://marketing.infecar.es/media/images/escenario.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 1;
-    grid-row-end: span 3;
-}
-
-.div6 {
-    grid-row: span 6 / span 6;
-    grid-column-start: 8;
-    grid-row-start: 2; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-} */
-
-
-/* .child-div6 { */
-/* Grid */
-/* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    gap: 5px;
-} */
-
-
-/* .div7 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 8; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-} */
-
-/* .child-div7 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-} */
-
-/* .div8 {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 2; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2fr, 2fr;
-    gap: 5px;
-} */
-
-/* .div9 {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 4; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2fr, 2fr;
-    gap: 5px;
-} */
-/* 
-.div11 {
-    grid-column: span 5 / span 5;
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 6; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2fr, 2fr;
-    gap: 5px;
-} */
-/* 
-.child-div8,
-.child-div9,
-.child-div5,
-.child-div11 { */
-/* Grid */
-/* display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 5px;
-}
-
-.div13 {
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 4; */
-
-/* Grid */
-/* display: grid; */
-/* grid-template-columns: 1fr;
-    grid-template-rows: 2fr, 2fr;
-    gap: 5px;
-}
-
-.child-div13 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-}
-
-.div15 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-
-.div17 {
-    grid-column: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 8; */
-
-/* Grid */
-/* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-}
-
-.child-div17 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-}
-
-.div18 {
-    grid-row: span 8 / span 8;
-    grid-column-start: 8;
-    grid-row-start: 1;
-} */
 
 /* Seats*/
 
@@ -531,22 +325,15 @@
     background-color: #AFCB37;
     transition: 0.4s;
     width: 35px;
-    height: 25px;
+    height: 35px;
 }
 
 .seats-yellow {
     background-color: #FBBC33;
     transition: 0.4s;
     width: 45px;
-    height: 50px;
+    height: 60px;
 }
-
-/* .seats-green-vertical {
-    background-color: #7FD7E3;
-    transition: 0.4s;
-    width: 35px;
-    height: 45px;
-} */
 
 .seats {
     display: flex;
@@ -599,90 +386,3 @@
     /* Asegura que el texto está centrado */
     margin: 1px;
 }
-
-/* .div-expetrior {
-    margin-top: 5px;
-    max-width: 420px;
-    height: 25px;
-    background-color: #e2dddd;
-    color: white;
-    font-weight: bold;
-    display: flex;
-    align-items: center; */
-/* Centra verticalmente */
-/* justify-content: center; */
-/* Centra horizontalmente */
-/* text-align: center;
-    border-radius: 5px;
-} */
-
-/* New Grid Exterior */
-
-/* .parent2 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    padding-top: 10px;
-
-    width: 425px;
-    height: 197px;
-
-    margin: 5px solid black;
-}
-
-.div21 {
-    grid-row: span 2 / span 2;
-}
-
-.div22 {
-    grid-column: span 2 / span 2;
-}
-
-.div23 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 5;
-}
-
-.div24 {
-    background-image: url('./b.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    grid-column: span 3 / span 3;
-    grid-row: span 8 / span 8;
-    grid-column-start: 1;
-    grid-row-start: 3;
-}
-
-/* .escenario {
-    background-image: url('https://marketing.infecar.es/media/images/escenario.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    grid-column-start: 1;
-    grid-column-end: span 2;
-    grid-row-start: 1;
-    grid-row-end: span 3;
-} */
-
-
-/* .div25 {
-    background-image: url('./cafeeria.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-
-    grid-column: span 2 / span 2;
-    grid-row: span 8 / span 8;
-    grid-column-start: 5;
-    grid-row-start: 2;
-} */
-
-
-/* div#mauticform_input_formularioexpositoresdigion2026_feria_gran_canaria_me_gus1 {
-    text-align: justify;
-}  */
