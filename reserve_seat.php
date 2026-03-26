@@ -25,9 +25,12 @@ try {
         exit;
     }
 
- // Validación del seat_number según el standID
-    if (($standID == 1 && strpos($seat_number, 'm') !== 0) || ($standID == 2 && strpos($seat_number, 'e') !== 0)) {
-        $message = ($standID == 1) ? "Selecciona un espacio con la letra M." : "Selecciona un espacio con la letra E.";
+    // Validación del seat_number según el standID
+    $seat_lower = strtolower($seat_number);
+    if (($standID == 1 && !str_starts_with($seat_lower, 'm')) ||
+        ($standID == 2 && !str_starts_with($seat_lower, 's'))
+    ) {
+        $message = ($standID == 1) ? "Selecciona un espacio con la letra M." : "Selecciona un espacio con la letra SS.";
         echo json_encode(["success" => false, "message" => $message]);
         exit;
     }
@@ -50,4 +53,3 @@ try {
 } catch (Exception $e) {
     echo json_encode(["success" => false, "message" => $e->getMessage()]);
 }
-?>
