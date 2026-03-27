@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const seatId = seat.id;
             // Verifica si el usuario ya tiene un Estand reservado
             if (seat.classList.contains("seats-user")) {
-                alert("Ya tienes un Estand reservado.");
+                Swal.fire({ icon: 'warning', title: 'Atención', text: 'Ya tienes un Estand reservado.' });
             } else {
                 reserveSeat(email, seatId, standID);  // Reserva el Estand si no tiene uno
             }
@@ -69,8 +69,7 @@ async function fetchOccupiedSeats(email) {
 
             // Si el usuario ya tiene un Estand, desactiva clic en todos los Estands
             if (data.userSeat) {
-                alert(`Ya tienes reservado el Estand: ${data.userSeat} 
-                    \n para reservar otro estand clicar en el botón verde "restablecer selección"`);
+                await Swal.fire({ icon: 'info', title: 'Estand ya reservado', html: `Ya tienes reservado el Estand: <b>${data.userSeat}</b><br>Para reservar otro estand clicar en el botón verde <b>"restablecer selección"</b>` });
                 disableAllSeats(); // Desactiva todos los Estands
                 updateInput(data.userSeat); // Enviar el Estand ya reservado al documento principal
             }
@@ -95,7 +94,7 @@ if (!standID) errores.push("Debes seleccionar un Tipo de Estand");
 if (!email) errores.push("o ingresar un email válido.");
 
 if (errores.length > 0) {
-    alert(errores.join("\n"));
+    await Swal.fire({ icon: 'warning', title: 'Atención', html: errores.join('<br>') });
     return;
 }
 
@@ -110,7 +109,7 @@ if (errores.length > 0) {
         const data = await response.json();
 
         if (data.success) {
-            alert(`Reserva exitosa para el Estand: ${seatId}`);
+            await Swal.fire({ icon: 'success', title: '¡Reserva Exitosa!', text: `Estand ${seatId} reservado correctamente.` });
             updateInput(seatId); // Enviar el Estand reservado al documento principal
 
             // Actualiza dinámicamente el estado del Estand reservado
@@ -124,7 +123,7 @@ if (errores.length > 0) {
             iniciarContador(DURACION, timerElement);
         } else {
             fetchOccupiedSeats(email);
-            alert(data.message || "No se pudo reservar el Estand.");
+            await Swal.fire({ icon: 'error', title: 'Error', text: data.message || 'No se pudo reservar el Estand.' });
         }
     } catch (error) {
         console.error("Error al reservar el Estand:", error);
@@ -194,7 +193,7 @@ async function liberarReserva() {
 
         if (data.success) {
             updateInput("");
-            alert("Estand se ha liberado.");
+            await Swal.fire({ icon: 'success', title: 'Liberado', text: 'El Estand se ha liberado.' });
             location.reload(); // Recargar para actualizar el estado
         } else {
             console.error(data.message || "No se pudo liberar la reserva.");
