@@ -306,7 +306,6 @@ body {
 }
 
 @media (max-width: 460px) {
-    .div11,
     .div12,
     .div14 {
         font-size: 9px;
@@ -314,12 +313,6 @@ body {
 
     .div11 {
         font-size: 10px;
-    }
-
-    .div12,
-    .div12,
-    .div14 {
-        font-size: 9px;
     }
 }
 
