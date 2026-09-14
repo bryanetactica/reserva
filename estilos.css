@@ -110,7 +110,7 @@ body {
 }
 
 #m12 {
-    transform: translate(13px, -3px) rotate(58deg);
+    transform: translate(20px, 5px) rotate(58deg);
 }
 
 @media (max-width: 460px) {
@@ -119,7 +119,7 @@ body {
     }
 
     #m12 {
-        transform: translate(17px, -3px) rotate(58deg);
+        transform: translate(22px, 2px) rotate(58deg);
     }
 
 }
@@ -219,7 +219,7 @@ body {
 }
 
 .div11 {
-    grid-column-start: 15;
+    grid-column: 14 / span 2;
     grid-row-start: 1;
 
     background-color: #ff751b;
@@ -296,14 +296,27 @@ body {
     border-radius: 4px;
 }
 
-.div11,
 .div12,
 .div14 {
     font-size: 11px;
 }
 
+.div11 {
+    font-size: 12px;
+}
+
 @media (max-width: 460px) {
     .div11,
+    .div12,
+    .div14 {
+        font-size: 9px;
+    }
+
+    .div11 {
+        font-size: 10px;
+    }
+
+    .div12,
     .div12,
     .div14 {
         font-size: 9px;
