@@ -2,8 +2,6 @@
 body {
     background-color: white;
     color: black;
-    margin: 0;
-    overflow-x: hidden;
 }
 
 .oval-wrapper {
@@ -26,11 +24,7 @@ body {
 
 @media (max-width: 460px) {
     .parent {
-        zoom: 1;
-    }
-
-    .oval-wrapper {
-        zoom: 0.62;
+        zoom: 0.75;
     }
 }
 
@@ -58,27 +52,6 @@ body {
     font-size: 8px;
     font-weight: bold;
     white-space: nowrap;
-}
-
-/* The page is displayed inside an iframe capped at 600 px wide. */
-@media (max-width: 620px) {
-    .div10 {
-        left: -40px;
-        padding: 1px 2px;
-        font-size: 7px;
-    }
-}
-
-@media (min-width: 550px) and (max-width: 620px) {
-    .oval-wrapper {
-        zoom: 0.9;
-    }
-}
-
-@media (min-width: 461px) and (max-width: 549px) {
-    .oval-wrapper {
-        zoom: 0.8;
-    }
 }
 
 .div10,
