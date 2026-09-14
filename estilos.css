@@ -103,6 +103,7 @@ body {
     grid-template-rows: repeat(2, 35px);
     align-content: start;
     gap: 5px;
+    margin-left: 10px;
 }
 
 #m11 {
