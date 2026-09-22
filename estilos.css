@@ -107,20 +107,20 @@ body {
 }
 
 #m11 {
-    transform: translate(-7px, 5px) rotate(58deg);
+    transform: translate(-7px, 25px) rotate(58deg);
 }
 
 #m12 {
-    transform: translate(20px, 5px) rotate(58deg);
+    transform: translate(20px, 25px) rotate(58deg);
 }
 
 @media (max-width: 460px) {
     #m11 {
-        transform: translate(-3px, 5px) rotate(58deg);
+        transform: translate(-3px, 25px) rotate(58deg);
     }
 
     #m12 {
-        transform: translate(22px, 2px) rotate(58deg);
+        transform: translate(22px, 22px) rotate(58deg);
     }
 
 }
@@ -304,7 +304,7 @@ body {
 
 .div11 {
     font-size: 12px;
-    transform: none;
+    transform: translateX(-8px);
 }
 
 .div14,
@@ -322,7 +322,7 @@ body {
 
     .div11 {
         font-size: 10px;
-        transform: none;
+        transform: translateX(0);
     }
 
     .div16 {
