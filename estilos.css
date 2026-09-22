@@ -352,20 +352,32 @@ body {
 
 @media (min-width: 461px) and (max-width: 767px) {
     .div12 {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .div14 {
-        font-size: 7px;
+        font-size: 9px;
     }
 
     .div11 {
-        font-size: 8px;
+        font-size: 10px;
         transform: translateX(0);
     }
 
     .div16 {
-        font-size: 7px;
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 768px) {
+    .div12,
+    .div11 {
+        font-size: 10px;
+    }
+
+    .div14,
+    .div16 {
+        font-size: 9px;
     }
 }
 
