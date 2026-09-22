@@ -28,6 +28,20 @@ body {
     }
 }
 
+@media (min-width: 461px) and (max-width: 767px) {
+    .parent {
+        zoom: 0.75;
+    }
+
+    #m11 {
+        transform: translate(-3px, 25px) rotate(58deg);
+    }
+
+    #m12 {
+        transform: translate(22px, 22px) rotate(58deg);
+    }
+}
+
 @media (min-width: 768px) {
     .parent {
         width: 608px;
@@ -318,6 +332,25 @@ body {
 
 @media (max-width: 460px) {
 
+    .div12 {
+        font-size: 8px;
+    }
+
+    .div14 {
+        font-size: 7px;
+    }
+
+    .div11 {
+        font-size: 8px;
+        transform: translateX(0);
+    }
+
+    .div16 {
+        font-size: 7px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 767px) {
     .div12 {
         font-size: 8px;
     }
