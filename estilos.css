@@ -297,9 +297,12 @@ body {
     border-radius: 4px;
 }
 
-.div12,
+.div12 {
+    font-size: 9px;
+}
+
 .div14 {
-    font-size: 11px;
+    font-size: 8px;
 }
 
 .div11 {
@@ -315,9 +318,12 @@ body {
 
 @media (max-width: 460px) {
 
-    .div12,
+    .div12 {
+        font-size: 8px;
+    }
+
     .div14 {
-        font-size: 9px;
+        font-size: 7px;
     }
 
     .div11 {
